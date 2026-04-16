@@ -1,16 +1,57 @@
-# React + Vite
+🎬 AI Multi-Language Video Dubbing System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+💡 Simple Explanation
 
-Currently, two official plugins are available:
+Upload a video → AI converts speech to text → Translates it → Generates new voice → Syncs it back to video
+👉 Result: Same video in a different language automatically
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Project Description
+The rapid growth of multimedia content on digital platforms has increased the demand for efficient and scalable language localization solutions. Traditional movie dubbing is labor-intensive, time-consuming, and costly due to manual translation and voice acting.
 
-## React Compiler
+This project presents an automated multi-language movie dubbing system using Deep Learning, Artificial Intelligence, and Natural Language Processing to achieve end-to-end speech-to-speech translation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The system accepts a video file as input, extracts audio, and automatically detects the source language. Speech is transcribed using OpenAI Whisper and translated into a user-selected target language using neural translation services such as Google Translate.
 
-## Expanding the ESLint configuration
+The translated text is then converted into speech and synchronized with the original video, enabling seamless dubbing. This approach significantly improves accessibility, reduces manual effort, and enhances workflow efficiency.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Features
+- 🎙️ Automatic Speech Recognition (ASR)
+- 🌍 Multi-language Translation
+- 🔊 AI Voice Generation (Text-to-Speech)
+- 🎥 Video Audio Synchronization
+- ⚡ Fast and Scalable Processing
+
+🛠️ Tech Stack
+- Frontend: React + Vite
+- Backend: Node.js
+- AI Models: OpenAI Whisper
+- Translation: Google Translate API
+- Other Tools: FFmpeg (for audio/video processing)
+
+---
+
+⚙️ How It Works
+
+1. Upload video file
+2. Extract audio using FFmpeg
+3. Detect source language
+4. Convert speech → text (Whisper)
+5. Translate text → target language
+6. Convert text → speech
+7. Merge dubbed audio with video
+
+⚙️ Installation & Setup
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+
+🎯 Future Improvements
+
+- Real-time dubbing
+- Better lip-sync alignment
+- More language support
+- Emotion-aware voice generation
+
+⭐ Conclusion
+This project demonstrates how AI can automate complex dubbing workflows, making content accessible globally with minimal human effort.
